@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/optimum_fitness/static/css/main.ddabfb86.css",
+    "main.js": "/optimum_fitness/static/js/main.9022aca3.js",
+    "static/media/banner2.jpg": "/optimum_fitness/static/media/banner2.eeaeb593a80dfff796f3.jpg",
+    "index.html": "/optimum_fitness/index.html",
+    "main.ddabfb86.css.map": "/optimum_fitness/static/css/main.ddabfb86.css.map",
+    "main.9022aca3.js.map": "/optimum_fitness/static/js/main.9022aca3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddabfb86.css",
+    "static/js/main.9022aca3.js"
+  ]
+}
