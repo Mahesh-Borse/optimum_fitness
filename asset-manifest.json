@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/optimum_fitness/static/css/main.aeaee5e9.css",
-    "main.js": "/optimum_fitness/static/js/main.e55d3aa9.js",
+    "main.js": "/optimum_fitness/static/js/main.f3cd9012.js",
     "static/js/526.64707c78.chunk.js": "/optimum_fitness/static/js/526.64707c78.chunk.js",
     "static/js/615.1ce3581a.chunk.js": "/optimum_fitness/static/js/615.1ce3581a.chunk.js",
-    "static/js/936.d657cd0d.chunk.js": "/optimum_fitness/static/js/936.d657cd0d.chunk.js",
+    "static/js/936.83f56545.chunk.js": "/optimum_fitness/static/js/936.83f56545.chunk.js",
     "static/js/954.5e3d517b.chunk.js": "/optimum_fitness/static/js/954.5e3d517b.chunk.js",
-    "static/js/576.31122938.chunk.js": "/optimum_fitness/static/js/576.31122938.chunk.js",
+    "static/js/626.d4bab686.chunk.js": "/optimum_fitness/static/js/626.d4bab686.chunk.js",
     "static/js/379.adba599e.chunk.js": "/optimum_fitness/static/js/379.adba599e.chunk.js",
     "static/js/527.661c982c.chunk.js": "/optimum_fitness/static/js/527.661c982c.chunk.js",
     "static/js/822.5f2ad7fa.chunk.js": "/optimum_fitness/static/js/822.5f2ad7fa.chunk.js",
@@ -17,14 +17,15 @@
     "static/js/216.065b9227.chunk.js": "/optimum_fitness/static/js/216.065b9227.chunk.js",
     "static/js/532.88d53bb1.chunk.js": "/optimum_fitness/static/js/532.88d53bb1.chunk.js",
     "static/media/gym-motivation-clip.mp4": "/optimum_fitness/static/media/gym-motivation-clip.f1c42a38ff78402eed54.mp4",
+    "static/media/video-thumbnail2.png": "/optimum_fitness/static/media/video-thumbnail2.75c8ffe6b0b8a9ea2684.png",
     "index.html": "/optimum_fitness/index.html",
     "main.aeaee5e9.css.map": "/optimum_fitness/static/css/main.aeaee5e9.css.map",
-    "main.e55d3aa9.js.map": "/optimum_fitness/static/js/main.e55d3aa9.js.map",
+    "main.f3cd9012.js.map": "/optimum_fitness/static/js/main.f3cd9012.js.map",
     "526.64707c78.chunk.js.map": "/optimum_fitness/static/js/526.64707c78.chunk.js.map",
     "615.1ce3581a.chunk.js.map": "/optimum_fitness/static/js/615.1ce3581a.chunk.js.map",
-    "936.d657cd0d.chunk.js.map": "/optimum_fitness/static/js/936.d657cd0d.chunk.js.map",
+    "936.83f56545.chunk.js.map": "/optimum_fitness/static/js/936.83f56545.chunk.js.map",
     "954.5e3d517b.chunk.js.map": "/optimum_fitness/static/js/954.5e3d517b.chunk.js.map",
-    "576.31122938.chunk.js.map": "/optimum_fitness/static/js/576.31122938.chunk.js.map",
+    "626.d4bab686.chunk.js.map": "/optimum_fitness/static/js/626.d4bab686.chunk.js.map",
     "379.adba599e.chunk.js.map": "/optimum_fitness/static/js/379.adba599e.chunk.js.map",
     "527.661c982c.chunk.js.map": "/optimum_fitness/static/js/527.661c982c.chunk.js.map",
     "822.5f2ad7fa.chunk.js.map": "/optimum_fitness/static/js/822.5f2ad7fa.chunk.js.map",
@@ -37,6 +38,6 @@
   },
   "entrypoints": [
     "static/css/main.aeaee5e9.css",
-    "static/js/main.e55d3aa9.js"
+    "static/js/main.f3cd9012.js"
   ]
 }
