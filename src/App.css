@@ -60,13 +60,13 @@ body {
 }
 
 .hero-banner-img {
-  position: absolute;
+  /* position: absolute;
   right: 0px;
   top: 30px;
-  /* width: 50%; */
+  width: 50%;
   height: 900px;
   margin-top: -330px;
-  border-bottom-left-radius: 10%;
+  border-bottom-left-radius: 10%; */
 }
 
 .exercise-card {
@@ -99,13 +99,13 @@ body {
 }
 
 .explore-btn {
-  color: var(--primary-color) !important;
-  background: var(--white-color) !important;
+  color: var(--white-color) !important;
+  background: var(--primary-color) !important;
   border: 1px solid var(--primary-color) !important;
 }
 .explore-btn:hover {
-  color: var(--white-color) !important;
-  background: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  background: var(--white-color) !important;
 }
 .search-btn:hover {
   color: var(--primary-color) !important;
@@ -195,9 +195,157 @@ body {
   }
 }
 
-/* p {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    color: #333;
-    font-weight: bold;
-} */
+/* HomePage.css */
+.homepage-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send the video to the background */
+}
+
+.video-background iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire container */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  z-index: 1;
+}
+/* HomePage.css */
+.homepage-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send the video to the background */
+}
+
+.video-background iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire container */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  z-index: 1;
+}
+
+/* HomePage.css */
+.homepage-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send the video to the background */
+}
+
+.video-background iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire container */
+  position: absolute;
+  top: 50%; /* Centers the video vertically */
+  left: 50%; /* Centers the video horizontally */
+  transform: translate(-50%, -50%); /* Adjusts for perfect centering */
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  z-index: 1;
+}
+
+/* cusrsor css animation */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+  transition: transform 0.3s ease, opacity 0.25s ease;
+  border: 2px solid #45aee2;
+  transform: translate(-50%, -50%);
+}
+
+.cursor div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: transparent;
+  transition: transform 0.3s ease, opacity 0.5s ease;
+}
+
+.cursor-pointer {
+  transform: scale(1.2);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: #000;
+  transform: translate(-50%, -50%);
+  transition: transform 1.5s ease;
+}
+
+.cursor-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0.56rem;
+  height: 0.56rem;
+  /* border: 1px solid white; */
+  /* background-color: #7ebddd; */
+  background-color: orange;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s ease;
+}

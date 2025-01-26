@@ -1,9 +1,10 @@
-import React from 'react';
-import { useState } from 'react';
+import { useState, Suspense, lazy } from 'react';
 import { Box } from '@mui/material';
-import Exercise from './Exercise';
-import SearchExercises from '../Components/SearchExercises';
-import HeroBanner from '../Components/HeroBanner';
+const ScreenLoader = lazy(() => import('../Components/ScreenLoader'));
+const VideoBackground = lazy(() => import('../Components/VideoBackground'));
+const HeroBanner = lazy(() => import('../Components/HeroBanner'));
+const SearchExercises = lazy(() => import('../Components/SearchExercises'));
+const Exercise = lazy(() => import('./Exercise'));
 
 
 const Home = () => {
@@ -14,20 +15,23 @@ const Home = () => {
 
     return (
         <Box>
-            <HeroBanner />
-            <SearchExercises
-                setExercises={setExercises}
-                bodyPart={bodyPart}
-                setBodyPart={setBodyPart}
-            />
-            <Exercise
-                exercises={exercises}
-                setExercises={setExercises}
-                // setBodyPart={setBodyPart}
-                bodyPart={bodyPart}
-                loading={loading}
-                setLoading={setLoading}
-            />
+            <Suspense fallback={() => { <ScreenLoader /> }}>
+                <VideoBackground />
+                <HeroBanner />
+                <SearchExercises
+                    setExercises={setExercises}
+                    bodyPart={bodyPart}
+                    setBodyPart={setBodyPart}
+                />
+                <Exercise
+                    exercises={exercises}
+                    setExercises={setExercises}
+                    bodyPart={bodyPart}
+                    loading={loading}
+                    setLoading={setLoading}
+                />
+
+            </Suspense>
         </Box>
     )
 }

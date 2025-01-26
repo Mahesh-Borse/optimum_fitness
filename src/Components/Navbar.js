@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Stack } from '@mui/material';
-// import Logo from '../assets/images/Logo.png'
 import { primaryColor } from '../constants';
 
 const Navbar = () => {
@@ -18,8 +17,8 @@ const Navbar = () => {
                     <img src={Logo} alt='logo' style={{ width: '48px', height: '48px', margin: '0 20px' }} />
                 </Link> */}
                 <Stack direction='row' gap='40px' fontSize='24px' alignItems='flex-end'>
-                    <Link to='/' style={{ textDecoration: 'none', color: '#3a1212', borderBottom: `3px solid ${primaryColor}` }}>Home</Link>
-                    <a href='#exercises' style={{ textDecoration: 'none', color: '#3a1212' }}>Exercises</a>
+                    <Link to='/optimum_fitness' style={{ textDecoration: 'none', color: '#FFF', borderBottom: `3px solid ${primaryColor}` }}>Home</Link>
+                    <a href='#exercises' style={{ textDecoration: 'none', color: '#FFF' }}>Exercises</a>
                 </Stack>
             </Stack>
         </>

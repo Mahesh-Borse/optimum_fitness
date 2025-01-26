@@ -1,18 +1,18 @@
 import { Box, Typography, Button } from '@mui/material'
 import React from 'react';
 import { primaryColor } from '../constants';
-import HeroBannerImage from '../assets/images/banner2.jpg';
+// import HeroBannerImage from '../assets/images/banner2.jpg';
 
 
 const HeroBanner = () => {
     return (
-        <Box sx={{ mt: { lg: '212px', xs: '70px' }, ml: { sm: '50px' }, mr: '0px', }}
+        <Box className="hero-banner-img" sx={{ mt: { lg: '40px', xs: '70px' }, ml: { sm: '50px' }, mr: '0px', }}
             position='relative' p='20px'>
             <Typography color={primaryColor} fontWeight={600} fontSize="26px">
                 Muscle Mavericks Fitness Club
             </Typography>
 
-            <Typography fontWeight={700} fontSize="30px" mb='15px' mt='20px'
+            <Typography fontWeight={700} color={'white'} fontSize="30px" mb='15px' mt='20px'
                 sx={{ fontSize: { lg: '44px', xs: '40px' } }}     >
                 Challenge Yourself,<br /> Redefine Limits
             </Typography>
@@ -27,7 +27,7 @@ const HeroBanner = () => {
             <Typography fontSize={200} fontWeight={600} color={primaryColor} sx={{ opacity: 0.3, display: { lg: 'block', xs: 'none' } }}>
                 Exercises
             </Typography>
-            <img src={HeroBannerImage} alt='HeroBannerImage' className='hero-banner-img' />
+            {/* <img src={HeroBannerImage} alt='HeroBannerImage' className='hero-banner-img' /> */}
         </Box>
     )
 }
