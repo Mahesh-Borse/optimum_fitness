@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Box } from '@mui/material';
 import './App.css';
+import OfflinePopup from './Components/OfflinePopup';
 // import Navbar from './Components/Navbar';
 // import Footer from './Components/Footer';
 // import Home from './pages/Home';
@@ -92,20 +93,26 @@ const App = () => {
     }, 1000);
 
     return (
-        <Box width='400psx' sx={{ width: { xl: '1488px' } }} m='auto'>
-            <div class="cursor" data-cursor>
-                <div></div>
-            </div>
-            <div class="cursor-trail" data-cursor-trail></div>
-            <Suspense fallback={() => ScreenLoader}>
-                <Navbar />
-                <Routes>
-                    <Route path='/optimum_fitness' element={<Home />} />
-                    <Route path='/optimum_fitness/exercises/:id' element={<ExerciseDetailsPage />} />
-                </Routes>
-                {/* <Footer /> */}
-            </Suspense>
-        </Box>
+        <>
+
+            <Box width='400psx' sx={{ width: { xl: '1488px' } }} m='auto'>
+                <OfflinePopup />
+
+                <div class="cursor" data-cursor>
+                    <div></div>
+                </div>
+                <div class="cursor-trail" data-cursor-trail></div>
+                <Suspense fallback={() => ScreenLoader}>
+
+                    <Navbar />
+                    <Routes>
+                        <Route path='/optimum_fitness' element={<Home />} />
+                        <Route path='/optimum_fitness/exercises/:id' element={<ExerciseDetailsPage />} />
+                    </Routes>
+                    {/* <Footer /> */}
+                </Suspense>
+            </Box>
+        </>
     )
 }
 
