@@ -87,7 +87,9 @@ class Cursor {
 }
 const App = () => {
 
-    new Cursor();
+    setTimeout(() => {
+        new Cursor();
+    }, 1000);
 
     return (
         <Box width='400psx' sx={{ width: { xl: '1488px' } }} m='auto'>
