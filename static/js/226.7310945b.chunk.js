@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkoptimum_fitness=self.webpackChunkoptimum_fitness||[]).push([[226],{9226:(r,e,t)=>{t.r(e),t.d(e,{default:()=>a});var s=t(5043),o=t(579);class n extends s.Component{constructor(r){super(r),this.state={hasError:!1,errorInfo:null}}static getDerivedStateFromError(r){return{hasError:!0}}componentDidCatch(r,e){console.log("Error logged: ",r,e)}render(){return this.state.hasError?(0,o.jsx)("h2",{children:"Something went wrong. Please try again later."}):this.props.children}}const a=n}}]);
+//# sourceMappingURL=226.7310945b.chunk.js.map
