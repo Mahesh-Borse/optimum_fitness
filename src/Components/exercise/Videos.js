@@ -20,24 +20,6 @@ const Videos = ({ videos, name }) => {
                 </span>
                 exercise videos
             </Typography>
-            {/* <Stack justifyContent='flex-start' flexWrap={'wrap'} alignItems='center'
-                sx={{ flexDirection: { lg: 'row', md: 'row' }, gap: '10px' }}>
-                {
-                    videos?.slice(0, 4).map((item, index) => (
-                        <a key={index}
-                            className='exercise-video'
-                            href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
-                            target='_blank'
-                        // ref='noreferrer' //gives error
-                        >
-                            <img key={index} src={item.video.thumbnails[0].url} alt={item.video.title} />
-                            <Typography variant='h5' >
-                                {item.video.title}
-                            </Typography>
-                        </a>
-                    ))
-                }
-            </Stack> */}
             <Stack
                 justifyContent="flex-start"
                 flexWrap="wrap"

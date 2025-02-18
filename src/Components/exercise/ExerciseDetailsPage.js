@@ -6,6 +6,7 @@ import { exercisedbURL, exerciseYoutubeVideoURL } from '../../constants';
 import Detail from './Detail';
 import Videos from './Videos';
 import SimilarExercises from './SimilarExercises';
+const ErrorBoundary = React.lazy(() => import('../../utils/ErrorBoundary'));
 
 
 const ExerciseDetailsPage = () => {
@@ -36,11 +37,12 @@ const ExerciseDetailsPage = () => {
 
   return (
 
-    <Box
-    >
-      <Detail exerciseDetail={exerciseDetail} />
-      <Videos videos={exerciseVideos} name={exerciseDetail.name} />
-      <SimilarExercises />
+    <Box>
+      <ErrorBoundary>
+        <Detail exerciseDetail={exerciseDetail} />
+        <Videos videos={exerciseVideos} name={exerciseDetail.name} />
+        <SimilarExercises />
+      </ErrorBoundary>
 
     </Box>
   )

@@ -1,13 +1,9 @@
 import React from 'react';
 import { Box } from '@mui/material'
 import BodyPart from './BodyPart'
-import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
+import { ScrollMenu } from 'react-horizontal-scrolling-menu';
 
 const HorizontalCardScrollbar = ({ data, setBodyPart, bodyPart }) => {
-    // console.log("data-HorizontalCardScrollbar--", data);
-    // console.log("bodyPart---", bodyPart);
-    // console.log("data---typeof", typeof data);
-
 
     return (
         <ScrollMenu>

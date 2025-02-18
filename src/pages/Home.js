@@ -1,5 +1,6 @@
 import { useState, Suspense, lazy } from 'react';
 import { Box } from '@mui/material';
+const ErrorBoundary = lazy(() => import('../utils/ErrorBoundary'));
 const ScreenLoader = lazy(() => import('../Components/ScreenLoader'));
 const VideoBackground = lazy(() => import('../Components/VideoBackground'));
 const HeroBanner = lazy(() => import('../Components/HeroBanner'));
@@ -15,23 +16,25 @@ const Home = () => {
 
     return (
         <Box>
-            <Suspense fallback={() => { <ScreenLoader /> }}>
-                <VideoBackground />
-                <HeroBanner />
-                <SearchExercises
-                    setExercises={setExercises}
-                    bodyPart={bodyPart}
-                    setBodyPart={setBodyPart}
-                />
-                <Exercise
-                    exercises={exercises}
-                    setExercises={setExercises}
-                    bodyPart={bodyPart}
-                    loading={loading}
-                    setLoading={setLoading}
-                />
+            <ErrorBoundary>
+                <Suspense fallback={<ScreenLoader />}>
+                    <VideoBackground />
+                    <HeroBanner />
+                    <SearchExercises
+                        setExercises={setExercises}
+                        bodyPart={bodyPart}
+                        setBodyPart={setBodyPart}
+                    />
+                    <Exercise
+                        exercises={exercises}
+                        setExercises={setExercises}
+                        bodyPart={bodyPart}
+                        loading={loading}
+                        setLoading={setLoading}
+                    />
 
-            </Suspense>
+                </Suspense>
+            </ErrorBoundary>
         </Box>
     )
 }
